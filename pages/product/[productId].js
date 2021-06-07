@@ -1,4 +1,4 @@
-import { useRouter, userRouter } from "next/router";
+import { useRouter } from "next/router";
 const ProductPage = () => {
   const router = useRouter();
   const { productId } = router.query;
