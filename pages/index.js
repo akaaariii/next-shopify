@@ -26,6 +26,10 @@ const Home = ({ products, collections }) => {
   const [newArrival, setNewArrival] = useState({});
   const [sofas, setSofas] = useState({});
 
+  client.product.fetchAll().then((product) => {
+    // console.log(product)
+  }) // return array of GraphModel
+
   useEffect(() => {
     collections.forEach((collection) => {
       if (collection.title === "New Arrival") {
